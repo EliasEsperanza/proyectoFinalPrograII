@@ -36,7 +36,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(152, 320);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(147, 64);
             this.button1.TabIndex = 0;
@@ -49,9 +49,9 @@
             this.label1.Location = new System.Drawing.Point(171, 74);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(164, 16);
+            this.label1.Size = new System.Drawing.Size(140, 16);
             this.label1.TabIndex = 1;
-            this.label1.Text = "se murienron los del titanic";
+            this.label1.Text = "se la come esperanza";
             // 
             // button2
             // 
@@ -70,7 +70,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "LOGIN";
             this.Text = "LOGIN";
             this.ResumeLayout(false);
