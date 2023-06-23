@@ -89,6 +89,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="vacantes.resx">
       <DependentUpon>vacantes.cs</DependentUpon>
@@ -105,6 +106,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\icons8-password.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\icons8-login-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\icons8-login.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
