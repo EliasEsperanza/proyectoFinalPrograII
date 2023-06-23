@@ -88,6 +88,12 @@
     <Compile Include="FormSeleccion.Designer.cs">
       <DependentUpon>FormSeleccion.cs</DependentUpon>
     </Compile>
+    <Compile Include="menuEntrevistador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menuEntrevistador.Designer.cs">
+      <DependentUpon>menuEntrevistador.cs</DependentUpon>
+    </Compile>
     <Compile Include="modificar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +141,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormSeleccion.resx">
       <DependentUpon>FormSeleccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menuEntrevistador.resx">
+      <DependentUpon>menuEntrevistador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="modificar.resx">
       <DependentUpon>modificar.cs</DependentUpon>
