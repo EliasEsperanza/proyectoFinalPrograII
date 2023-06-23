@@ -204,7 +204,7 @@
             // 
             // BTN_guardarResultado
             // 
-            this.BTN_guardarResultado.Location = new System.Drawing.Point(142, 368);
+            this.BTN_guardarResultado.Location = new System.Drawing.Point(143, 368);
             this.BTN_guardarResultado.Name = "BTN_guardarResultado";
             this.BTN_guardarResultado.Size = new System.Drawing.Size(182, 34);
             this.BTN_guardarResultado.TabIndex = 11;
