@@ -87,7 +87,7 @@
             this.BTN_Login.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BTN_Login.Location = new System.Drawing.Point(62, 262);
             this.BTN_Login.Name = "BTN_Login";
-            this.BTN_Login.Size = new System.Drawing.Size(185, 37);
+            this.BTN_Login.Size = new System.Drawing.Size(173, 39);
             this.BTN_Login.TabIndex = 0;
             this.BTN_Login.Text = "Iniciar Sesion";
             this.BTN_Login.UseVisualStyleBackColor = false;
