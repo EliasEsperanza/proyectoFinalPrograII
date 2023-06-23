@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Asignacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Asignacion.Designer.cs">
+      <DependentUpon>Asignacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Aspirante.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +84,9 @@
     <Compile Include="vacantes.Designer.cs">
       <DependentUpon>vacantes.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Asignacion.resx">
+      <DependentUpon>Asignacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Aspirante.resx">
       <DependentUpon>Aspirante.cs</DependentUpon>
     </EmbeddedResource>
@@ -124,6 +133,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\icons8-login.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\icons8-confirmar.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -63,6 +63,16 @@ namespace proyectoFinalPrograII.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_confirmar {
+            get {
+                object obj = ResourceManager.GetObject("icons8-confirmar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_login {
             get {
                 object obj = ResourceManager.GetObject("icons8-login", resourceCulture);
