@@ -51,6 +51,7 @@
             this.tbfiltrar.Name = "tbfiltrar";
             this.tbfiltrar.Size = new System.Drawing.Size(494, 20);
             this.tbfiltrar.TabIndex = 1;
+            this.tbfiltrar.TextChanged += new System.EventHandler(this.tbfiltrar_TextChanged);
             // 
             // button1
             // 
@@ -60,6 +61,7 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "Agregar Aspirante";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Aspirante
             // 

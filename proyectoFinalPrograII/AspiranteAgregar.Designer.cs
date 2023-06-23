@@ -94,6 +94,7 @@
             this.ButtonAgregar.TabIndex = 6;
             this.ButtonAgregar.Text = "Agregar";
             this.ButtonAgregar.UseVisualStyleBackColor = true;
+            this.ButtonAgregar.Click += new System.EventHandler(this.ButtonAgregar_Click);
             // 
             // ButtonRegresar
             // 
@@ -103,6 +104,7 @@
             this.ButtonRegresar.TabIndex = 7;
             this.ButtonRegresar.Text = "Regresar";
             this.ButtonRegresar.UseVisualStyleBackColor = true;
+            this.ButtonRegresar.Click += new System.EventHandler(this.ButtonRegresar_Click);
             // 
             // AspiranteAgregar
             // 
