@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="agregarVacantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="agregarVacantes.Designer.cs">
+      <DependentUpon>agregarVacantes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Asignacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,9 @@
     <Compile Include="vacantes.Designer.cs">
       <DependentUpon>vacantes.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="agregarVacantes.resx">
+      <DependentUpon>agregarVacantes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Asignacion.resx">
       <DependentUpon>Asignacion.cs</DependentUpon>
     </EmbeddedResource>
