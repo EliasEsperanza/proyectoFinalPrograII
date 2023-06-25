@@ -70,6 +70,7 @@
     <Compile Include="AspiranteAgregar.Designer.cs">
       <DependentUpon>AspiranteAgregar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Credenciales.cs" />
     <Compile Include="Evaluacion.cs">
       <SubType>Form</SubType>
     </Compile>
