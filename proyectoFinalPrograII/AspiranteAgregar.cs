@@ -12,22 +12,22 @@ namespace proyectoFinalPrograII
 {
     public partial class AspiranteAgregar : Form
     {
-        Aspirante I = new Aspirante();
+        Aspirante I;
         public AspiranteAgregar(Aspirante i)
         {
             InitializeComponent();
             I = i;
         }
-
-        private void ButtonAgregar_Click(object sender, EventArgs e)
+        private void ButtonRegresar_Click_1(object sender, EventArgs e)
         {
-            I.ListAspirante.Add(new ObjAspirante(I.ListAspirante.Count + 1, Convert.ToString(tbDatGenerales), Convert.ToString(tbDatAcademico), Convert.ToString(tbRangoPisto)));
+            I.Actualizardt();
             I.Show();
             this.Close();
         }
-
-        private void ButtonRegresar_Click(object sender, EventArgs e)
+        private void ButtonAgregar_Click_1(object sender, EventArgs e)
         {
+            I.ListAspirante.Add(new ObjAspirante(I.ListAspirante.Count + 1, Convert.ToString(tbDatGenerales), Convert.ToString(tbDatAcademico), Convert.ToString(tbRangoPisto)));
+            I.Actualizardt();
             I.Show();
             this.Close();
         }

@@ -17,12 +17,21 @@ namespace proyectoFinalPrograII
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void ButtonAspirantes_Click(object sender, EventArgs e)
         {
-
+            Aspirante F2 = new Aspirante(this);
+            F2.Show();
+            this.Hide();
         }
 
-        private void FormSeleccion_Load(object sender, EventArgs e)
+        private void ButtonVerVacante_Click(object sender, EventArgs e)
+        {
+            vacantes F2 = new vacantes(this);
+            F2.Show();
+            this.Hide();
+        }
+
+        private void ButtonVerTablas_Click(object sender, EventArgs e)
         {
 
         }

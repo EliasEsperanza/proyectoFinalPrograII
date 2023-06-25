@@ -12,12 +12,14 @@ namespace proyectoFinalPrograII
 {
     public partial class Aspirante : Form
     {
+        public FormSeleccion FA;
         public List<ObjAspirante> ListAspirante;
-        public Aspirante()
+        public Aspirante(FormSeleccion fA)
         {
             ListAspirante = new List<ObjAspirante> { new ObjAspirante(1, "Hieloeston", "Bachillerato", "160-170"), new ObjAspirante(2, "Elias Esperanza", "Universitario", "290-4000"), new ObjAspirante(3, "Angel Ramirez", "Univeritario Basado", "2000- 10000") };
             InitializeComponent();
             Actualizardt();
+            FA = fA;
         }
         public void Actualizardt()
         {
@@ -52,6 +54,36 @@ namespace proyectoFinalPrograII
                     dgvAspirante.Rows.Add(item.ID, item.DatosPersonales, item.NivelAcademico, item.RangoSalario, "Modificar", "Eliminar");
                 }
             }
+        }
+
+        private void ModificarEliminarClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int Fila = dgvAspirante.CurrentRow.Index;
+            int Celda = dgvAspirante.CurrentCell.ColumnIndex;
+            int L= 0;
+            for (int i = 0; i < ListAspirante.Count; i++)
+            {
+                if (ListAspirante[i].ID == Convert.ToInt16(dgvAspirante.Rows[Fila].Cells[0].Value))
+                {
+                    L = i;
+                }
+            }
+            if(Celda == 5)
+            {
+                ModificarAspirante JH = new ModificarAspirante(this, L);
+
+            }
+            else if(Celda == 6)
+            {
+                ListAspirante.RemoveAt(L);
+                Actualizardt();
+            }
+        }
+
+        private void ButtonRegresar_Click(object sender, EventArgs e)
+        {
+            FA.Show();
+            this.Close();
         }
     }
 }

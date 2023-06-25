@@ -28,58 +28,71 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.ButtonVerVacante = new System.Windows.Forms.Button();
+            this.ButtonAspirantes = new System.Windows.Forms.Button();
+            this.ButtonVerTablas = new System.Windows.Forms.Button();
+            this.ButtonRegresar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // ButtonVerVacante
             // 
-            this.button1.Location = new System.Drawing.Point(102, 55);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(158, 34);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Ver Vacantes";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.ButtonVerVacante.Location = new System.Drawing.Point(102, 55);
+            this.ButtonVerVacante.Name = "ButtonVerVacante";
+            this.ButtonVerVacante.Size = new System.Drawing.Size(158, 34);
+            this.ButtonVerVacante.TabIndex = 0;
+            this.ButtonVerVacante.Text = "Ver Vacantes";
+            this.ButtonVerVacante.UseVisualStyleBackColor = true;
+            this.ButtonVerVacante.Click += new System.EventHandler(this.ButtonVerVacante_Click);
             // 
-            // button2
+            // ButtonAspirantes
             // 
-            this.button2.Location = new System.Drawing.Point(102, 105);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(158, 34);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Ver Aspirantes";
-            this.button2.UseVisualStyleBackColor = true;
+            this.ButtonAspirantes.Location = new System.Drawing.Point(102, 105);
+            this.ButtonAspirantes.Name = "ButtonAspirantes";
+            this.ButtonAspirantes.Size = new System.Drawing.Size(158, 34);
+            this.ButtonAspirantes.TabIndex = 1;
+            this.ButtonAspirantes.Text = "Ver Aspirantes";
+            this.ButtonAspirantes.UseVisualStyleBackColor = true;
+            this.ButtonAspirantes.Click += new System.EventHandler(this.ButtonAspirantes_Click);
             // 
-            // button3
+            // ButtonVerTablas
             // 
-            this.button3.Location = new System.Drawing.Point(102, 157);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(158, 34);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Ver Tabla de Vacantes";
-            this.button3.UseVisualStyleBackColor = true;
+            this.ButtonVerTablas.Location = new System.Drawing.Point(102, 157);
+            this.ButtonVerTablas.Name = "ButtonVerTablas";
+            this.ButtonVerTablas.Size = new System.Drawing.Size(158, 34);
+            this.ButtonVerTablas.TabIndex = 2;
+            this.ButtonVerTablas.Text = "Ver Tabla de Vacantes";
+            this.ButtonVerTablas.UseVisualStyleBackColor = true;
+            this.ButtonVerTablas.Click += new System.EventHandler(this.ButtonVerTablas_Click);
+            // 
+            // ButtonRegresar
+            // 
+            this.ButtonRegresar.Location = new System.Drawing.Point(283, 235);
+            this.ButtonRegresar.Name = "ButtonRegresar";
+            this.ButtonRegresar.Size = new System.Drawing.Size(88, 23);
+            this.ButtonRegresar.TabIndex = 3;
+            this.ButtonRegresar.Text = "Regresa ";
+            this.ButtonRegresar.UseVisualStyleBackColor = true;
             // 
             // FormSeleccion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(383, 270);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.ButtonRegresar);
+            this.Controls.Add(this.ButtonVerTablas);
+            this.Controls.Add(this.ButtonAspirantes);
+            this.Controls.Add(this.ButtonVerVacante);
             this.Name = "FormSeleccion";
             this.Text = "FormSeleccion";
-            this.Load += new System.EventHandler(this.FormSeleccion_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button ButtonVerVacante;
+        private System.Windows.Forms.Button ButtonAspirantes;
+        private System.Windows.Forms.Button ButtonVerTablas;
+        private System.Windows.Forms.Button ButtonRegresar;
     }
 }
