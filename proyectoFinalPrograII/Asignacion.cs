@@ -40,6 +40,10 @@ namespace proyectoFinalPrograII
                 winPreguntas.Show();
 
             }
+            else
+            {
+                MessageBox.Show("Debe seleccionar exactamente 5 preguntas.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
