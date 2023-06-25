@@ -35,12 +35,13 @@
             // 
             // BTN_asignacion
             // 
-            this.BTN_asignacion.Location = new System.Drawing.Point(77, 63);
+            this.BTN_asignacion.Location = new System.Drawing.Point(77, 62);
             this.BTN_asignacion.Name = "BTN_asignacion";
             this.BTN_asignacion.Size = new System.Drawing.Size(175, 37);
             this.BTN_asignacion.TabIndex = 0;
             this.BTN_asignacion.Text = "Asignacion de preguntas";
             this.BTN_asignacion.UseVisualStyleBackColor = true;
+            this.BTN_asignacion.Click += new System.EventHandler(this.BTN_asignacion_Click);
             // 
             // BTN_Evaluar
             // 
@@ -50,6 +51,7 @@
             this.BTN_Evaluar.TabIndex = 1;
             this.BTN_Evaluar.Text = "Evaluar aspirante";
             this.BTN_Evaluar.UseVisualStyleBackColor = true;
+            this.BTN_Evaluar.Click += new System.EventHandler(this.BTN_Evaluar_Click);
             // 
             // BTN_Resultados
             // 
@@ -59,6 +61,7 @@
             this.BTN_Resultados.TabIndex = 2;
             this.BTN_Resultados.Text = "Ver resultados";
             this.BTN_Resultados.UseVisualStyleBackColor = true;
+            this.BTN_Resultados.Click += new System.EventHandler(this.BTN_Resultados_Click);
             // 
             // menuEntrevistador
             // 
