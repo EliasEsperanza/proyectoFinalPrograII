@@ -16,5 +16,14 @@ namespace proyectoFinalPrograII
         {
             InitializeComponent();
         }
+
+        public void obtenerTexto(int answerIndex,string texto)
+        {
+            if(answerIndex >= 0 && answerIndex < 5)
+            {
+                Label respuesta = Controls.Find("answer" + (answerIndex + 1), true)[0] as Label; 
+                respuesta.Text = texto;
+            }
+        }
     }
 }
