@@ -163,6 +163,7 @@
             this.BTN_confirmar.TabIndex = 11;
             this.BTN_confirmar.Text = "Confirmar";
             this.BTN_confirmar.UseVisualStyleBackColor = false;
+            this.BTN_confirmar.Click += new System.EventHandler(this.BTN_confirmar_Click);
             // 
             // Asignacion
             // 

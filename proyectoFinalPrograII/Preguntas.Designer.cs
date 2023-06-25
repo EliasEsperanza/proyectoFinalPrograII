@@ -49,7 +49,7 @@
             // 
             // score1
             // 
-            this.score1.Location = new System.Drawing.Point(359, 80);
+            this.score1.Location = new System.Drawing.Point(393, 80);
             this.score1.Maximum = new decimal(new int[] {
             5,
             0,
@@ -89,7 +89,7 @@
             // 
             // score2
             // 
-            this.score2.Location = new System.Drawing.Point(359, 133);
+            this.score2.Location = new System.Drawing.Point(393, 133);
             this.score2.Maximum = new decimal(new int[] {
             5,
             0,
@@ -120,7 +120,7 @@
             // 
             // score3
             // 
-            this.score3.Location = new System.Drawing.Point(359, 191);
+            this.score3.Location = new System.Drawing.Point(393, 191);
             this.score3.Maximum = new decimal(new int[] {
             5,
             0,
@@ -151,7 +151,7 @@
             // 
             // score4
             // 
-            this.score4.Location = new System.Drawing.Point(359, 247);
+            this.score4.Location = new System.Drawing.Point(393, 247);
             this.score4.Maximum = new decimal(new int[] {
             5,
             0,
@@ -182,7 +182,7 @@
             // 
             // score5
             // 
-            this.score5.Location = new System.Drawing.Point(359, 302);
+            this.score5.Location = new System.Drawing.Point(393, 302);
             this.score5.Maximum = new decimal(new int[] {
             5,
             0,
