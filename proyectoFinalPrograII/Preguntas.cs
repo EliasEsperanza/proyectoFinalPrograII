@@ -18,10 +18,9 @@ namespace proyectoFinalPrograII
             InitializeComponent();
         }
  
-        public Preguntas(int pregunta)
+        public void getL(int l)
         {
-            InitializeComponent();
-            L = pregunta;
+            L = l;
         }
 
         public void obtenerTexto(int answerIndex,string texto)
@@ -38,6 +37,10 @@ namespace proyectoFinalPrograII
             Datos.resultado = Convert.ToDouble((score1.Value + score2.Value + score3.Value + score4.Value + score5.Value) / 5);
 
             Datos.listResultado.Add(new ObjAspirante(Datos.ListAspirante[L].DatosPersonales, Datos.resultado));
+
+            menuEntrevistador winMenu = new menuEntrevistador();
+            winMenu.Show();
+            this.Hide();
         }
     }
 }

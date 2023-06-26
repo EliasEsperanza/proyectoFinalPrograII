@@ -12,10 +12,12 @@ namespace proyectoFinalPrograII
 {
     public partial class Evaluacion : Form
     {
-        public Evaluacion()
+        public Preguntas winPregunta;
+        public Evaluacion(Preguntas winPregunta)
         {
             InitializeComponent();
             Actualizardt();
+            this.winPregunta = winPregunta;
         }
 
         public void Actualizardt()
@@ -42,7 +44,7 @@ namespace proyectoFinalPrograII
             }
             if (Celda == 4)
             {
-                Preguntas winPreguntas = new Preguntas(L);
+                
                 winPreguntas.Show();
                 this.Hide();
 

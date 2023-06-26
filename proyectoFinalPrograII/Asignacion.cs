@@ -37,7 +37,8 @@ namespace proyectoFinalPrograII
                 {
                     winPreguntas.obtenerTexto(i, checkboxeSelecionados[i].Text);
                 }
-
+                //winPreguntas.Show();
+                this.Hide();
                 winMenu.Show();
 
             }
