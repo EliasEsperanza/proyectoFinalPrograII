@@ -26,7 +26,7 @@ namespace proyectoFinalPrograII
         }
         private void ButtonAgregar_Click_1(object sender, EventArgs e)
         {
-            Datos.ListAspirante.Add(new ObjAspirante(Datos.ListAspirante.Count + 1, Convert.ToString(tbDatGenerales.Text), Convert.ToString(tbDatAcademico.Text), Convert.ToString(tbRangoPisto.Text)));
+            Datos.ListAspirante.Add(new ObjAspirante(Datos.ListAspirante.Count + 1, Convert.ToString(tbDatGenerales.Text), Convert.ToString(tbDatAcademico.Text), double.Parse(tbRangoPisto.Text)));
             I.Actualizardt();
             I.Show();
             this.Close();

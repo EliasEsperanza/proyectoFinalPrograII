@@ -29,7 +29,7 @@ namespace proyectoFinalPrograII
                 }
                 else if (TB_User.Text == Credenciales.userRecursos && TB_passWord.Text == Credenciales.passRecursos)
                 {
-                    FormSeleccion menu2 = new FormSeleccion();
+                    FormSeleccion menu2 = new FormSeleccion(this);
                     menu2.Show();
                     this.Hide();
                 }

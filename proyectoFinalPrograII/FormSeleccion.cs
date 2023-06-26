@@ -14,7 +14,7 @@ namespace proyectoFinalPrograII
     {
         public LOGIN FG;
 
-        public FormSeleccion(LOGIN fG)//Metele un this cuando llames este contructor Elias Esperanza Torres
+        public FormSeleccion(LOGIN fG)
         {
             InitializeComponent();
             FG = fG;

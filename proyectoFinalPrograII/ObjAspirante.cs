@@ -11,9 +11,9 @@ namespace proyectoFinalPrograII
         public int ID;
         public string DatosPersonales;
         public string NivelAcademico;
-        public string RangoSalario;
+        public double RangoSalario;
         
-        public ObjAspirante(int id, string datosPersonales, string nivelAcademico, string rangoSalario)
+        public ObjAspirante(int id, string datosPersonales, string nivelAcademico, double rangoSalario)
         {
             ID = id;
             DatosPersonales = datosPersonales;

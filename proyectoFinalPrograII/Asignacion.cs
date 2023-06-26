@@ -27,6 +27,7 @@ namespace proyectoFinalPrograII
         private void BTN_confirmar_Click(object sender, EventArgs e)
         {
             var checkboxeSelecionados = checkBoxes.Where(cb => cb.Checked).ToList();
+            menuEntrevistador winMenu = new menuEntrevistador();
 
             if(checkboxeSelecionados.Count == 5)
             {
@@ -37,7 +38,7 @@ namespace proyectoFinalPrograII
                     winPreguntas.obtenerTexto(i, checkboxeSelecionados[i].Text);
                 }
 
-                winPreguntas.Show();
+                winMenu.Show();
 
             }
             else

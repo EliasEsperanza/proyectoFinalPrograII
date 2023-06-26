@@ -15,6 +15,7 @@ namespace proyectoFinalPrograII
         public Evaluacion()
         {
             InitializeComponent();
+            
         }
     }
 }

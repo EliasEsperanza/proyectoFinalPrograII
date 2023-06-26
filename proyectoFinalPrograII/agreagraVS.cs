@@ -29,5 +29,7 @@ namespace proyectoFinalPrograII
             this.CantidadV = cantidad;
             T = t;
         }
+
+       
     }
 }
