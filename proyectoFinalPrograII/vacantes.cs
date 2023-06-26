@@ -30,6 +30,7 @@ namespace proyectoFinalPrograII
 
         private void button2_Click(object sender, EventArgs e)
         {
+            //Agregar tryCacth
             int fila = DTvacantes.CurrentRow.Index;
             int celda = DTvacantes.CurrentCell.ColumnIndex;
             int J = 0;

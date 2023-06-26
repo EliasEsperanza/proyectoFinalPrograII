@@ -44,7 +44,7 @@ namespace proyectoFinalPrograII
             }
             if (Celda == 4)
             {
-                
+                //System.NullReferenceException: 'Referencia a objeto no establecida como instancia de un objeto.'
                 winPreguntas.Show();
                 this.Hide();
 
