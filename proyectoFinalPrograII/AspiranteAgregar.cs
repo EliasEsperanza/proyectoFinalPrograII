@@ -12,7 +12,7 @@ namespace proyectoFinalPrograII
 {
     public partial class AspiranteAgregar : Form
     {
-        public Aspirante I;
+        public Aspirante I;//Karlas
         public AspiranteAgregar(Aspirante i)
         {
             InitializeComponent();
