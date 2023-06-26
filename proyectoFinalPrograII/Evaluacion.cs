@@ -35,6 +35,7 @@ namespace proyectoFinalPrograII
             int Fila = dataGridView1.CurrentRow.Index;
             int Celda = dataGridView1.CurrentCell.ColumnIndex;
             int L = 0;
+            //MessageBox.Show("Fila "+ Fila + "Columna " + Celda);
             for (int i = 0; i < Datos.ListAspirante.Count; i++)
             {
                 if (Datos.ListAspirante[i].ID == Convert.ToInt16(dataGridView1.Rows[Fila].Cells[0].Value))
@@ -44,6 +45,7 @@ namespace proyectoFinalPrograII
             }
             if (Celda == 4)
             {
+                winPreguntas.getL(L);
                 //System.NullReferenceException: 'Referencia a objeto no establecida como instancia de un objeto.'
                 winPreguntas.Show();
                 this.Hide();

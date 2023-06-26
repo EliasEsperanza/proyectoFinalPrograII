@@ -23,7 +23,8 @@ namespace proyectoFinalPrograII
             {
                 if (TB_User.Text == Credenciales.userEntrevistador && TB_passWord.Text == Credenciales.passEntrevistador)
                 {
-                    menuEntrevistador menu1 = new menuEntrevistador();
+                    Preguntas P = new Preguntas();
+                    menuEntrevistador menu1 = new menuEntrevistador(P);
                     menu1.Show();
                     this.Hide();
                 }

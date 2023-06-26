@@ -13,6 +13,7 @@ namespace proyectoFinalPrograII
     public partial class Preguntas : Form
     {
         public int L;
+        public bool TenerPreguntas = false;
         public Preguntas()
         {
             InitializeComponent();
@@ -30,6 +31,7 @@ namespace proyectoFinalPrograII
                 Label respuesta = Controls.Find("answer" + (answerIndex + 1), true)[0] as Label; 
                 respuesta.Text = texto;
             }
+            TenerPreguntas = true;
         }
 
         private void BTN_guardarResultado_Click(object sender, EventArgs e)
@@ -38,7 +40,7 @@ namespace proyectoFinalPrograII
 
             Datos.listResultado.Add(new ObjAspirante(Datos.ListAspirante[L].DatosPersonales, Datos.resultado));
 
-            menuEntrevistador winMenu = new menuEntrevistador();
+            menuEntrevistador winMenu = new menuEntrevistador(this);
             winMenu.Show();
             this.Hide();
         }

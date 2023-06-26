@@ -18,10 +18,10 @@ namespace proyectoFinalPrograII
             InitializeComponent();
             P = p;
         }
-        public menuEntrevistador()
-        {
-            InitializeComponent();
-        }
+        //public menuEntrevistador()
+        //{
+        //    InitializeComponent();
+        //}
         
 
         private void BTN_asignacion_Click(object sender, EventArgs e)
@@ -33,9 +33,16 @@ namespace proyectoFinalPrograII
 
         private void BTN_Evaluar_Click(object sender, EventArgs e)
         {
-            Evaluacion win2 = new Evaluacion(P);
-            win2.Show();
-            this.Hide();
+            if (P.TenerPreguntas == false)
+            {
+                MessageBox.Show("Por favor elija pregunta para evaluar");
+            }
+            else
+            {
+                Evaluacion win2 = new Evaluacion(P);
+                win2.Show();
+                this.Hide();
+            }
         }
 
         private void BTN_Resultados_Click(object sender, EventArgs e)
