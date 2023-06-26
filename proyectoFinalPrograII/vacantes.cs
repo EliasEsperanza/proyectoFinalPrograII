@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace proyectoFinalPrograII
 {
@@ -107,6 +108,24 @@ namespace proyectoFinalPrograII
         {
             FA.Show();
             this.Close();
+        }
+
+        private void checkordenar_CheckedChanged(object sender, EventArgs e)
+        {
+            List<agreagraVS> mayoromenor = (from xd in Datos.lisvacante orderby xd.T select xd).ToList();
+            
+            if (checkordenar.Checked)
+            {   
+                DTvacantes.Rows.Clear();
+                foreach (agreagraVS item in mayoromenor )
+                {
+                    DTvacantes.Rows.Add(item.T, item.NombreV, item.DescripcionV, item.RequisitosV, item.SalarioV, item.FCDEIV, item.FCDEFinV, item.CantidadV);
+                }
+            }
+            else
+            {
+                actualizar();
+            }
         }
     }
 }
