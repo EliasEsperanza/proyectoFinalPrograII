@@ -27,20 +27,27 @@ namespace proyectoFinalPrograII
         public int DarID()
         {
             int J = 0; bool K = false;
-            for (int i = 0; i < Datos.ListAspirante.Count; i++)
+            for (int i = 0; i < Datos.ListAspirante.Count + 1; i++)
             {
                 for (int j = 0; j < Datos.ListAspirante.Count; j++)
                 {
-                    if (i != Datos.ListAspirante[j].ID)
+                    if (i == Datos.ListAspirante[j].ID)
                     {
-                        J = i;
+                        //J = i;
                         K = true;
+                        break;
                     }
                     
+                    
                 }
-                if (K == true)
+
+                if (K == false)
                 {
-                    break;
+                    J = i;
+                }
+                else
+                {
+                    K = false;
                 }
                 
             }
