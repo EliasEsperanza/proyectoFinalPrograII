@@ -28,7 +28,7 @@ namespace proyectoFinalPrograII
         {
             Datos.ListAspirante[Fila].DatosPersonales = tbDatGenerales.Text;
             Datos.ListAspirante[Fila].NivelAcademico = tbDatAcademico.Text;
-            Datos.ListAspirante[Fila].RangoSalario = tbRangoPisto.Text;
+            Datos.ListAspirante[Fila].RangoSalario = Convert.ToDouble(tbRangoPisto.Text);
             F2.Show();
             F2.Actualizardt();
             this.Close();

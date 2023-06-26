@@ -12,7 +12,7 @@ namespace proyectoFinalPrograII
 {
     public partial class AspiranteAgregar : Form
     {
-        Aspirante I;
+        public Aspirante I;
         public AspiranteAgregar(Aspirante i)
         {
             InitializeComponent();
@@ -24,9 +24,33 @@ namespace proyectoFinalPrograII
             I.Show();
             this.Close();
         }
+        public int DarID()
+        {
+            int J = 0; bool K = false;
+            for (int i = 0; i < Datos.ListAspirante.Count; i++)
+            {
+                for (int j = 0; j < Datos.ListAspirante.Count; j++)
+                {
+                    if (i != Datos.ListAspirante[j].ID)
+                    {
+                        J = i;
+                        K = true;
+                    }
+                    
+                }
+                if (K == true)
+                {
+                    break;
+                }
+                
+            }
+
+            return J;
+        }
+
         private void ButtonAgregar_Click_1(object sender, EventArgs e)
         {
-            Datos.ListAspirante.Add(new ObjAspirante(Datos.ListAspirante.Count + 1, Convert.ToString(tbDatGenerales.Text), Convert.ToString(tbDatAcademico.Text), double.Parse(tbRangoPisto.Text)));
+            Datos.ListAspirante.Add(new ObjAspirante(DarID(), Convert.ToString(tbDatGenerales.Text), Convert.ToString(tbDatAcademico.Text), double.Parse(tbRangoPisto.Text)));
             I.Actualizardt();
             I.Show();
             this.Close();
