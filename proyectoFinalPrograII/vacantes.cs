@@ -117,9 +117,10 @@ namespace proyectoFinalPrograII
             if (checkordenar.Checked)
             {   
                 DTvacantes.Rows.Clear();
-                foreach (agreagraVS item in mayoromenor )
+                foreach (agreagraVS item in mayoromenor)
                 {
                     DTvacantes.Rows.Add(item.T, item.NombreV, item.DescripcionV, item.RequisitosV, item.SalarioV, item.FCDEIV, item.FCDEFinV, item.CantidadV);
+                    
                 }
             }
             else
