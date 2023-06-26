@@ -12,12 +12,12 @@ namespace proyectoFinalPrograII
 {
     public partial class Evaluacion : Form
     {
-        public Preguntas winPregunta;
+        public Preguntas winPreguntas;
         public Evaluacion(Preguntas winPregunta)
         {
             InitializeComponent();
             Actualizardt();
-            this.winPregunta = winPregunta;
+            this.winPreguntas = winPregunta;
         }
 
         public void Actualizardt()

@@ -12,10 +12,17 @@ namespace proyectoFinalPrograII
 {
     public partial class menuEntrevistador : Form
     {
+        public Preguntas P;
+        public menuEntrevistador(Preguntas p)
+        {
+            InitializeComponent();
+            P = p;
+        }
         public menuEntrevistador()
         {
             InitializeComponent();
         }
+        
 
         private void BTN_asignacion_Click(object sender, EventArgs e)
         {
@@ -26,14 +33,14 @@ namespace proyectoFinalPrograII
 
         private void BTN_Evaluar_Click(object sender, EventArgs e)
         {
-            Evaluacion win2 = new Evaluacion();
+            Evaluacion win2 = new Evaluacion(P);
             win2.Show();
             this.Hide();
         }
 
         private void BTN_Resultados_Click(object sender, EventArgs e)
         {
-            Resultado win3 = new Resultado();
+            Resultado win3 = new Resultado(this);
             win3.Show();
             this.Hide();
         }

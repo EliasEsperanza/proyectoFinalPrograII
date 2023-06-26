@@ -12,8 +12,10 @@ namespace proyectoFinalPrograII
 {
     public partial class Resultado : Form
     {
-        public Resultado()
+        public menuEntrevistador J;
+        public Resultado(menuEntrevistador j)
         {
+            J = j;
             InitializeComponent();
             llenarData();
         }
@@ -29,8 +31,8 @@ namespace proyectoFinalPrograII
 
         private void BTN_regresar_Click(object sender, EventArgs e)
         {
-            menuEntrevistador winMenu = new menuEntrevistador();
-            winMenu.Show();
+           
+            J.Show();
             this.Hide();
         }
     }

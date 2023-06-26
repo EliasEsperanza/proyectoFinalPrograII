@@ -27,16 +27,18 @@ namespace proyectoFinalPrograII
         private void BTN_confirmar_Click(object sender, EventArgs e)
         {
             var checkboxeSelecionados = checkBoxes.Where(cb => cb.Checked).ToList();
-            menuEntrevistador winMenu = new menuEntrevistador();
+            Preguntas winPreguntas = new Preguntas();
 
             if(checkboxeSelecionados.Count == 5)
             {
-                Preguntas winPreguntas = new Preguntas();
 
                 for (int i = 0; i < checkboxeSelecionados.Count; i++)
                 {
                     winPreguntas.obtenerTexto(i, checkboxeSelecionados[i].Text);
                 }
+
+                menuEntrevistador winMenu = new menuEntrevistador(winPreguntas);
+
                 //winPreguntas.Show();
                 this.Hide();
                 winMenu.Show();
