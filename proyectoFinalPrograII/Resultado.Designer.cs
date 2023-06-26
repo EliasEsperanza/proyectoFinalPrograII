@@ -28,11 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.BTN_regresar = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.cNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cScore = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BTN_regresar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.t1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,6 +52,18 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(553, 257);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // cNombre
+            // 
+            this.cNombre.HeaderText = "Datos Personales";
+            this.cNombre.Name = "cNombre";
+            this.cNombre.ReadOnly = true;
+            // 
+            // cScore
+            // 
+            this.cScore.HeaderText = "Nota";
+            this.cScore.Name = "cScore";
+            this.cScore.ReadOnly = true;
             // 
             // BTN_regresar
             // 
@@ -71,17 +85,9 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Resultados";
             // 
-            // cNombre
+            // t1
             // 
-            this.cNombre.HeaderText = "Datos Personales";
-            this.cNombre.Name = "cNombre";
-            this.cNombre.ReadOnly = true;
-            // 
-            // cScore
-            // 
-            this.cScore.HeaderText = "Nota";
-            this.cScore.Name = "cScore";
-            this.cScore.ReadOnly = true;
+            this.t1.Tick += new System.EventHandler(this.Tick);
             // 
             // Resultado
             // 
@@ -106,5 +112,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridViewTextBoxColumn cNombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn cScore;
+        private System.Windows.Forms.Timer t1;
     }
 }
