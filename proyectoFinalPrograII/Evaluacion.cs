@@ -15,7 +15,38 @@ namespace proyectoFinalPrograII
         public Evaluacion()
         {
             InitializeComponent();
-            
+            Actualizardt();
+        }
+
+        public void Actualizardt()
+        {
+            dataGridView1.Rows.Clear();
+            //List<ObjAspirante> ListRespuesta = (from ObjAspirante in ListAspirante where).ToList();
+            foreach (ObjAspirante item in Datos.ListAspirante)
+            {
+                dataGridView1.Rows.Add(item.ID, item.DatosPersonales, item.NivelAcademico, item.RangoSalario, "Evaluar");
+            }
+        }
+
+        public void EvaluarClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int Fila = dataGridView1.CurrentRow.Index;
+            int Celda = dataGridView1.CurrentCell.ColumnIndex;
+            int L = 0;
+            for (int i = 0; i < Datos.ListAspirante.Count; i++)
+            {
+                if (Datos.ListAspirante[i].ID == Convert.ToInt16(dataGridView1.Rows[Fila].Cells[0].Value))
+                {
+                    L = i;
+                }
+            }
+            if (Celda == 4)
+            {
+                Preguntas winPreguntas = new Preguntas(L);
+                winPreguntas.Show();
+                this.Hide();
+
+            }
         }
     }
-}
+ }

@@ -12,6 +12,7 @@ namespace proyectoFinalPrograII
         public string DatosPersonales;
         public string NivelAcademico;
         public double RangoSalario;
+        public double result;
         
         public ObjAspirante(int id, string datosPersonales, string nivelAcademico, double rangoSalario)
         {
@@ -20,6 +21,10 @@ namespace proyectoFinalPrograII
             NivelAcademico = nivelAcademico;
             RangoSalario = rangoSalario;
             
+        }
+        public ObjAspirante(string datosPersonales, double result) {
+            this.DatosPersonales = datosPersonales;
+            this.result = result;
         }
     }
 }

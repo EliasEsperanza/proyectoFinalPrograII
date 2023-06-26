@@ -30,7 +30,6 @@
         {
             this.ButtonVerVacante = new System.Windows.Forms.Button();
             this.ButtonAspirantes = new System.Windows.Forms.Button();
-            this.ButtonVerTablas = new System.Windows.Forms.Button();
             this.ButtonRegresar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -46,23 +45,13 @@
             // 
             // ButtonAspirantes
             // 
-            this.ButtonAspirantes.Location = new System.Drawing.Point(102, 105);
+            this.ButtonAspirantes.Location = new System.Drawing.Point(102, 133);
             this.ButtonAspirantes.Name = "ButtonAspirantes";
             this.ButtonAspirantes.Size = new System.Drawing.Size(158, 34);
             this.ButtonAspirantes.TabIndex = 1;
             this.ButtonAspirantes.Text = "Ver Aspirantes";
             this.ButtonAspirantes.UseVisualStyleBackColor = true;
             this.ButtonAspirantes.Click += new System.EventHandler(this.ButtonAspirantes_Click);
-            // 
-            // ButtonVerTablas
-            // 
-            this.ButtonVerTablas.Location = new System.Drawing.Point(102, 157);
-            this.ButtonVerTablas.Name = "ButtonVerTablas";
-            this.ButtonVerTablas.Size = new System.Drawing.Size(158, 34);
-            this.ButtonVerTablas.TabIndex = 2;
-            this.ButtonVerTablas.Text = "Ver Tabla de Vacantes";
-            this.ButtonVerTablas.UseVisualStyleBackColor = true;
-            this.ButtonVerTablas.Click += new System.EventHandler(this.ButtonVerTablas_Click);
             // 
             // ButtonRegresar
             // 
@@ -80,7 +69,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(383, 270);
             this.Controls.Add(this.ButtonRegresar);
-            this.Controls.Add(this.ButtonVerTablas);
             this.Controls.Add(this.ButtonAspirantes);
             this.Controls.Add(this.ButtonVerVacante);
             this.Name = "FormSeleccion";
@@ -93,7 +81,6 @@
 
         private System.Windows.Forms.Button ButtonVerVacante;
         private System.Windows.Forms.Button ButtonAspirantes;
-        private System.Windows.Forms.Button ButtonVerTablas;
         private System.Windows.Forms.Button ButtonRegresar;
     }
 }

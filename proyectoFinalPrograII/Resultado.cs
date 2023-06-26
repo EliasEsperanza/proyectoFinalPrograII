@@ -15,6 +15,23 @@ namespace proyectoFinalPrograII
         public Resultado()
         {
             InitializeComponent();
+            llenarData();
+        }
+
+        public void llenarData()
+        {
+            foreach(ObjAspirante item in Datos.listResultado)
+            {
+                dataGridView1.Rows.Add(item.DatosPersonales, item.result);
+            }
+            Datos.resultado = 0;
+        }
+
+        private void BTN_regresar_Click(object sender, EventArgs e)
+        {
+            menuEntrevistador winMenu = new menuEntrevistador();
+            winMenu.Show();
+            this.Hide();
         }
     }
 }

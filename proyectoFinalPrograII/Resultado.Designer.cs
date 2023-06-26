@@ -31,6 +31,8 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.BTN_regresar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.cNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cScore = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -38,7 +40,11 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.cNombre,
+            this.cScore});
             this.dataGridView1.Location = new System.Drawing.Point(107, 62);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -53,6 +59,7 @@
             this.BTN_regresar.TabIndex = 1;
             this.BTN_regresar.Text = "Regresar";
             this.BTN_regresar.UseVisualStyleBackColor = true;
+            this.BTN_regresar.Click += new System.EventHandler(this.BTN_regresar_Click);
             // 
             // label1
             // 
@@ -63,6 +70,18 @@
             this.label1.Size = new System.Drawing.Size(100, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = "Resultados";
+            // 
+            // cNombre
+            // 
+            this.cNombre.HeaderText = "Datos Personales";
+            this.cNombre.Name = "cNombre";
+            this.cNombre.ReadOnly = true;
+            // 
+            // cScore
+            // 
+            this.cScore.HeaderText = "Nota";
+            this.cScore.Name = "cScore";
+            this.cScore.ReadOnly = true;
             // 
             // Resultado
             // 
@@ -85,5 +104,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button BTN_regresar;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cNombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cScore;
     }
 }

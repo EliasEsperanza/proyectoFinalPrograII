@@ -210,6 +210,7 @@
             this.BTN_guardarResultado.TabIndex = 11;
             this.BTN_guardarResultado.Text = "Guardar resultado";
             this.BTN_guardarResultado.UseVisualStyleBackColor = true;
+            this.BTN_guardarResultado.Click += new System.EventHandler(this.BTN_guardarResultado_Click);
             // 
             // label6
             // 
