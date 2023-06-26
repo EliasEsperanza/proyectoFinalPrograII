@@ -19,18 +19,18 @@ namespace proyectoFinalPrograII
             F2 = f2;
             Fila = fila;
             InitializeComponent();
-            tbDatGenerales.Text = F2.ListAspirante[fila].DatosPersonales.ToString();
-            tbDatAcademico.Text = F2.ListAspirante[fila].NivelAcademico.ToString();
-            tbRangoPisto.Text = F2.ListAspirante[fila].RangoSalario.ToString();
+            tbDatGenerales.Text = Datos.ListAspirante[Fila].DatosPersonales.ToString();
+            tbDatAcademico.Text = Datos.ListAspirante[Fila].NivelAcademico.ToString();
+            tbRangoPisto.Text = Datos.ListAspirante[Fila].RangoSalario.ToString();
         }
 
         private void ButtonModificar_Click(object sender, EventArgs e)
         {
-            F2.ListAspirante[Fila].DatosPersonales = tbDatGenerales.Text;
-            F2.ListAspirante[Fila].NivelAcademico = tbDatAcademico.Text;
-            F2.ListAspirante[Fila].RangoSalario = tbRangoPisto.Text;
-            F2.Actualizardt();
+            Datos.ListAspirante[Fila].DatosPersonales = tbDatGenerales.Text;
+            Datos.ListAspirante[Fila].NivelAcademico = tbDatAcademico.Text;
+            Datos.ListAspirante[Fila].RangoSalario = tbRangoPisto.Text;
             F2.Show();
+            F2.Actualizardt();
             this.Close();
         }
 

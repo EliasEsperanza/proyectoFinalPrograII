@@ -12,9 +12,12 @@ namespace proyectoFinalPrograII
 {
     public partial class FormSeleccion : Form
     {
-        public FormSeleccion()
+        public LOGIN FG;
+
+        public FormSeleccion(LOGIN fG)//Metele un this cuando llames este contructor Elias Esperanza Torres
         {
             InitializeComponent();
+            FG = fG;
         }
 
         private void ButtonAspirantes_Click(object sender, EventArgs e)
@@ -34,6 +37,12 @@ namespace proyectoFinalPrograII
         private void ButtonVerTablas_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void ButtonRegresar_Click(object sender, EventArgs e)
+        {
+            FG.Show();
+            this.Close();
         }
     }
 }

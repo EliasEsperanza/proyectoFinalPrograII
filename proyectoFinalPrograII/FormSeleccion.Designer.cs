@@ -72,6 +72,7 @@
             this.ButtonRegresar.TabIndex = 3;
             this.ButtonRegresar.Text = "Regresa ";
             this.ButtonRegresar.UseVisualStyleBackColor = true;
+            this.ButtonRegresar.Click += new System.EventHandler(this.ButtonRegresar_Click);
             // 
             // FormSeleccion
             // 
