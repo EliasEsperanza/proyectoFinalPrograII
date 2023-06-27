@@ -35,9 +35,10 @@
             // 
             // ButtonVerVacante
             // 
-            this.ButtonVerVacante.Location = new System.Drawing.Point(102, 55);
+            this.ButtonVerVacante.Location = new System.Drawing.Point(136, 68);
+            this.ButtonVerVacante.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ButtonVerVacante.Name = "ButtonVerVacante";
-            this.ButtonVerVacante.Size = new System.Drawing.Size(158, 34);
+            this.ButtonVerVacante.Size = new System.Drawing.Size(211, 42);
             this.ButtonVerVacante.TabIndex = 0;
             this.ButtonVerVacante.Text = "Ver Vacantes";
             this.ButtonVerVacante.UseVisualStyleBackColor = true;
@@ -45,9 +46,10 @@
             // 
             // ButtonAspirantes
             // 
-            this.ButtonAspirantes.Location = new System.Drawing.Point(102, 133);
+            this.ButtonAspirantes.Location = new System.Drawing.Point(136, 164);
+            this.ButtonAspirantes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ButtonAspirantes.Name = "ButtonAspirantes";
-            this.ButtonAspirantes.Size = new System.Drawing.Size(158, 34);
+            this.ButtonAspirantes.Size = new System.Drawing.Size(211, 42);
             this.ButtonAspirantes.TabIndex = 1;
             this.ButtonAspirantes.Text = "Ver Aspirantes";
             this.ButtonAspirantes.UseVisualStyleBackColor = true;
@@ -55,9 +57,10 @@
             // 
             // ButtonRegresar
             // 
-            this.ButtonRegresar.Location = new System.Drawing.Point(283, 235);
+            this.ButtonRegresar.Location = new System.Drawing.Point(377, 289);
+            this.ButtonRegresar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ButtonRegresar.Name = "ButtonRegresar";
-            this.ButtonRegresar.Size = new System.Drawing.Size(88, 23);
+            this.ButtonRegresar.Size = new System.Drawing.Size(117, 28);
             this.ButtonRegresar.TabIndex = 3;
             this.ButtonRegresar.Text = "Regresa ";
             this.ButtonRegresar.UseVisualStyleBackColor = true;
@@ -65,12 +68,14 @@
             // 
             // FormSeleccion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(383, 270);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(511, 332);
             this.Controls.Add(this.ButtonRegresar);
             this.Controls.Add(this.ButtonAspirantes);
             this.Controls.Add(this.ButtonVerVacante);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormSeleccion";
             this.Text = "FormSeleccion";
             this.ResumeLayout(false);

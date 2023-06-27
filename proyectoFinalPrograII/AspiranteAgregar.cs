@@ -73,10 +73,18 @@ namespace proyectoFinalPrograII
 
         private void ButtonAgregar_Click_1(object sender, EventArgs e)
         {
-            Datos.ListAspirante.Add(new ObjAspirante(DarID(), Convert.ToString(tbDatGenerales.Text), Convert.ToString(tbDatAcademico.Text), double.Parse(tbRangoPisto.Text)));
-            I.Actualizardt();
-            I.Show();
-            this.Close();
+            try
+            {
+                Datos.ListAspirante.Add(new ObjAspirante(DarID(), Convert.ToString(tbDatGenerales.Text), Convert.ToString(tbDatAcademico.Text), double.Parse(tbRangoPisto.Text)));
+                I.Actualizardt();
+                I.Show();
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("no se puede agregar datos vacios");
+            }
+            
         }
     }
 }

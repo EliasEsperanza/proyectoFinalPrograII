@@ -35,9 +35,10 @@
             // 
             // BTN_asignacion
             // 
-            this.BTN_asignacion.Location = new System.Drawing.Point(77, 62);
+            this.BTN_asignacion.Location = new System.Drawing.Point(103, 76);
+            this.BTN_asignacion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BTN_asignacion.Name = "BTN_asignacion";
-            this.BTN_asignacion.Size = new System.Drawing.Size(175, 37);
+            this.BTN_asignacion.Size = new System.Drawing.Size(233, 46);
             this.BTN_asignacion.TabIndex = 0;
             this.BTN_asignacion.Text = "Asignacion de preguntas";
             this.BTN_asignacion.UseVisualStyleBackColor = true;
@@ -45,9 +46,10 @@
             // 
             // BTN_Evaluar
             // 
-            this.BTN_Evaluar.Location = new System.Drawing.Point(77, 146);
+            this.BTN_Evaluar.Location = new System.Drawing.Point(103, 180);
+            this.BTN_Evaluar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BTN_Evaluar.Name = "BTN_Evaluar";
-            this.BTN_Evaluar.Size = new System.Drawing.Size(175, 36);
+            this.BTN_Evaluar.Size = new System.Drawing.Size(233, 44);
             this.BTN_Evaluar.TabIndex = 1;
             this.BTN_Evaluar.Text = "Evaluar aspirante";
             this.BTN_Evaluar.UseVisualStyleBackColor = true;
@@ -55,9 +57,10 @@
             // 
             // BTN_Resultados
             // 
-            this.BTN_Resultados.Location = new System.Drawing.Point(77, 229);
+            this.BTN_Resultados.Location = new System.Drawing.Point(103, 282);
+            this.BTN_Resultados.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BTN_Resultados.Name = "BTN_Resultados";
-            this.BTN_Resultados.Size = new System.Drawing.Size(175, 37);
+            this.BTN_Resultados.Size = new System.Drawing.Size(233, 46);
             this.BTN_Resultados.TabIndex = 2;
             this.BTN_Resultados.Text = "Ver resultados";
             this.BTN_Resultados.UseVisualStyleBackColor = true;
@@ -65,12 +68,14 @@
             // 
             // menuEntrevistador
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(342, 356);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(456, 438);
             this.Controls.Add(this.BTN_Resultados);
             this.Controls.Add(this.BTN_Evaluar);
             this.Controls.Add(this.BTN_asignacion);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "menuEntrevistador";
             this.Text = "Menu Entrevistador";
             this.ResumeLayout(false);

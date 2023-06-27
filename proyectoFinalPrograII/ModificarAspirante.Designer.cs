@@ -43,9 +43,10 @@
             // 
             // ButtonRegresar
             // 
-            this.ButtonRegresar.Location = new System.Drawing.Point(243, 307);
+            this.ButtonRegresar.Location = new System.Drawing.Point(324, 378);
+            this.ButtonRegresar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ButtonRegresar.Name = "ButtonRegresar";
-            this.ButtonRegresar.Size = new System.Drawing.Size(75, 23);
+            this.ButtonRegresar.Size = new System.Drawing.Size(100, 28);
             this.ButtonRegresar.TabIndex = 27;
             this.ButtonRegresar.Text = "Regresar";
             this.ButtonRegresar.UseVisualStyleBackColor = true;
@@ -53,9 +54,10 @@
             // 
             // ButtonModificar
             // 
-            this.ButtonModificar.Location = new System.Drawing.Point(57, 229);
+            this.ButtonModificar.Location = new System.Drawing.Point(76, 282);
+            this.ButtonModificar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ButtonModificar.Name = "ButtonModificar";
-            this.ButtonModificar.Size = new System.Drawing.Size(185, 38);
+            this.ButtonModificar.Size = new System.Drawing.Size(247, 47);
             this.ButtonModificar.TabIndex = 26;
             this.ButtonModificar.Text = "Modificar";
             this.ButtonModificar.UseVisualStyleBackColor = true;
@@ -63,49 +65,55 @@
             // 
             // tbRangoPisto
             // 
-            this.tbRangoPisto.Location = new System.Drawing.Point(23, 133);
+            this.tbRangoPisto.Location = new System.Drawing.Point(31, 164);
+            this.tbRangoPisto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbRangoPisto.Name = "tbRangoPisto";
-            this.tbRangoPisto.Size = new System.Drawing.Size(232, 20);
+            this.tbRangoPisto.Size = new System.Drawing.Size(308, 22);
             this.tbRangoPisto.TabIndex = 25;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(20, 116);
+            this.label3.Location = new System.Drawing.Point(27, 143);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(164, 13);
+            this.label3.Size = new System.Drawing.Size(209, 16);
             this.label3.TabIndex = 24;
             this.label3.Text = "Rango de Preteciones Salariales:";
             // 
             // tbDatAcademico
             // 
-            this.tbDatAcademico.Location = new System.Drawing.Point(23, 84);
+            this.tbDatAcademico.Location = new System.Drawing.Point(31, 103);
+            this.tbDatAcademico.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbDatAcademico.Name = "tbDatAcademico";
-            this.tbDatAcademico.Size = new System.Drawing.Size(232, 20);
+            this.tbDatAcademico.Size = new System.Drawing.Size(308, 22);
             this.tbDatAcademico.TabIndex = 23;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(20, 67);
+            this.label2.Location = new System.Drawing.Point(27, 82);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(147, 13);
+            this.label2.Size = new System.Drawing.Size(186, 16);
             this.label2.TabIndex = 22;
             this.label2.Text = "Datos de Niveles Academica:";
             // 
             // tbDatGenerales
             // 
-            this.tbDatGenerales.Location = new System.Drawing.Point(23, 34);
+            this.tbDatGenerales.Location = new System.Drawing.Point(31, 42);
+            this.tbDatGenerales.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbDatGenerales.Name = "tbDatGenerales";
-            this.tbDatGenerales.Size = new System.Drawing.Size(232, 20);
+            this.tbDatGenerales.Size = new System.Drawing.Size(308, 22);
             this.tbDatGenerales.TabIndex = 21;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 17);
+            this.label1.Location = new System.Drawing.Point(27, 21);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(154, 13);
+            this.label1.Size = new System.Drawing.Size(196, 16);
             this.label1.TabIndex = 20;
             this.label1.Text = "Datos generales de la persona:";
             // 
@@ -115,9 +123,10 @@
             // 
             // ModificarAspirante
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(347, 345);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(463, 425);
             this.Controls.Add(this.ButtonRegresar);
             this.Controls.Add(this.ButtonModificar);
             this.Controls.Add(this.tbRangoPisto);
@@ -126,6 +135,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tbDatGenerales);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ModificarAspirante";
             this.Text = "ModificarAspirante";
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();

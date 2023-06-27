@@ -47,29 +47,34 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.cNombre,
             this.cScore});
-            this.dataGridView1.Location = new System.Drawing.Point(107, 62);
+            this.dataGridView1.Location = new System.Drawing.Point(143, 76);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(553, 257);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(737, 316);
             this.dataGridView1.TabIndex = 0;
             // 
             // cNombre
             // 
             this.cNombre.HeaderText = "Datos Personales";
+            this.cNombre.MinimumWidth = 6;
             this.cNombre.Name = "cNombre";
             this.cNombre.ReadOnly = true;
             // 
             // cScore
             // 
             this.cScore.HeaderText = "Nota";
+            this.cScore.MinimumWidth = 6;
             this.cScore.Name = "cScore";
             this.cScore.ReadOnly = true;
             // 
             // BTN_regresar
             // 
-            this.BTN_regresar.Location = new System.Drawing.Point(615, 388);
+            this.BTN_regresar.Location = new System.Drawing.Point(820, 478);
+            this.BTN_regresar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BTN_regresar.Name = "BTN_regresar";
-            this.BTN_regresar.Size = new System.Drawing.Size(135, 27);
+            this.BTN_regresar.Size = new System.Drawing.Size(180, 33);
             this.BTN_regresar.TabIndex = 1;
             this.BTN_regresar.Text = "Regresar";
             this.BTN_regresar.UseVisualStyleBackColor = true;
@@ -79,9 +84,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(333, 20);
+            this.label1.Location = new System.Drawing.Point(444, 25);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 20);
+            this.label1.Size = new System.Drawing.Size(119, 25);
             this.label1.TabIndex = 2;
             this.label1.Text = "Resultados";
             // 
@@ -91,16 +97,16 @@
             // 
             // Resultado
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BTN_regresar);
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Resultado";
             this.Text = "Resultado";
-            //this.Activated += new System.EventHandler(this.CargaFormulario);
-            //this.Load += new System.EventHandler(this.Resultado_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

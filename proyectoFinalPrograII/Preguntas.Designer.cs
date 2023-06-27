@@ -49,7 +49,8 @@
             // 
             // score1
             // 
-            this.score1.Location = new System.Drawing.Point(393, 80);
+            this.score1.Location = new System.Drawing.Point(524, 98);
+            this.score1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.score1.Maximum = new decimal(new int[] {
             5,
             0,
@@ -61,7 +62,7 @@
             0,
             0});
             this.score1.Name = "score1";
-            this.score1.Size = new System.Drawing.Size(46, 20);
+            this.score1.Size = new System.Drawing.Size(61, 22);
             this.score1.TabIndex = 1;
             this.score1.Value = new decimal(new int[] {
             1,
@@ -72,24 +73,27 @@
             // answer1
             // 
             this.answer1.AutoSize = true;
-            this.answer1.Location = new System.Drawing.Point(70, 82);
+            this.answer1.Location = new System.Drawing.Point(93, 101);
+            this.answer1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.answer1.Name = "answer1";
-            this.answer1.Size = new System.Drawing.Size(59, 13);
+            this.answer1.Size = new System.Drawing.Size(71, 16);
             this.answer1.TabIndex = 2;
             this.answer1.Text = "Pregunta 1";
             // 
             // answer2
             // 
             this.answer2.AutoSize = true;
-            this.answer2.Location = new System.Drawing.Point(70, 140);
+            this.answer2.Location = new System.Drawing.Point(93, 172);
+            this.answer2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.answer2.Name = "answer2";
-            this.answer2.Size = new System.Drawing.Size(59, 13);
+            this.answer2.Size = new System.Drawing.Size(71, 16);
             this.answer2.TabIndex = 3;
             this.answer2.Text = "Pregunta 2";
             // 
             // score2
             // 
-            this.score2.Location = new System.Drawing.Point(393, 133);
+            this.score2.Location = new System.Drawing.Point(524, 164);
+            this.score2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.score2.Maximum = new decimal(new int[] {
             5,
             0,
@@ -101,7 +105,7 @@
             0,
             0});
             this.score2.Name = "score2";
-            this.score2.Size = new System.Drawing.Size(46, 20);
+            this.score2.Size = new System.Drawing.Size(61, 22);
             this.score2.TabIndex = 4;
             this.score2.Value = new decimal(new int[] {
             1,
@@ -112,15 +116,17 @@
             // answer3
             // 
             this.answer3.AutoSize = true;
-            this.answer3.Location = new System.Drawing.Point(70, 198);
+            this.answer3.Location = new System.Drawing.Point(93, 244);
+            this.answer3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.answer3.Name = "answer3";
-            this.answer3.Size = new System.Drawing.Size(59, 13);
+            this.answer3.Size = new System.Drawing.Size(71, 16);
             this.answer3.TabIndex = 5;
             this.answer3.Text = "Pregunta 3";
             // 
             // score3
             // 
-            this.score3.Location = new System.Drawing.Point(393, 191);
+            this.score3.Location = new System.Drawing.Point(524, 235);
+            this.score3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.score3.Maximum = new decimal(new int[] {
             5,
             0,
@@ -132,7 +138,7 @@
             0,
             0});
             this.score3.Name = "score3";
-            this.score3.Size = new System.Drawing.Size(46, 20);
+            this.score3.Size = new System.Drawing.Size(61, 22);
             this.score3.TabIndex = 6;
             this.score3.Value = new decimal(new int[] {
             1,
@@ -143,15 +149,17 @@
             // answer4
             // 
             this.answer4.AutoSize = true;
-            this.answer4.Location = new System.Drawing.Point(70, 254);
+            this.answer4.Location = new System.Drawing.Point(93, 313);
+            this.answer4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.answer4.Name = "answer4";
-            this.answer4.Size = new System.Drawing.Size(59, 13);
+            this.answer4.Size = new System.Drawing.Size(71, 16);
             this.answer4.TabIndex = 7;
             this.answer4.Text = "Pregunta 4";
             // 
             // score4
             // 
-            this.score4.Location = new System.Drawing.Point(393, 247);
+            this.score4.Location = new System.Drawing.Point(524, 304);
+            this.score4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.score4.Maximum = new decimal(new int[] {
             5,
             0,
@@ -163,7 +171,7 @@
             0,
             0});
             this.score4.Name = "score4";
-            this.score4.Size = new System.Drawing.Size(46, 20);
+            this.score4.Size = new System.Drawing.Size(61, 22);
             this.score4.TabIndex = 8;
             this.score4.Value = new decimal(new int[] {
             1,
@@ -174,15 +182,17 @@
             // answer5
             // 
             this.answer5.AutoSize = true;
-            this.answer5.Location = new System.Drawing.Point(70, 304);
+            this.answer5.Location = new System.Drawing.Point(93, 374);
+            this.answer5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.answer5.Name = "answer5";
-            this.answer5.Size = new System.Drawing.Size(59, 13);
+            this.answer5.Size = new System.Drawing.Size(71, 16);
             this.answer5.TabIndex = 9;
             this.answer5.Text = "Pregunta 5";
             // 
             // score5
             // 
-            this.score5.Location = new System.Drawing.Point(393, 302);
+            this.score5.Location = new System.Drawing.Point(524, 372);
+            this.score5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.score5.Maximum = new decimal(new int[] {
             5,
             0,
@@ -194,7 +204,7 @@
             0,
             0});
             this.score5.Name = "score5";
-            this.score5.Size = new System.Drawing.Size(46, 20);
+            this.score5.Size = new System.Drawing.Size(61, 22);
             this.score5.TabIndex = 10;
             this.score5.Value = new decimal(new int[] {
             1,
@@ -204,9 +214,10 @@
             // 
             // BTN_guardarResultado
             // 
-            this.BTN_guardarResultado.Location = new System.Drawing.Point(143, 368);
+            this.BTN_guardarResultado.Location = new System.Drawing.Point(191, 453);
+            this.BTN_guardarResultado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BTN_guardarResultado.Name = "BTN_guardarResultado";
-            this.BTN_guardarResultado.Size = new System.Drawing.Size(182, 34);
+            this.BTN_guardarResultado.Size = new System.Drawing.Size(243, 42);
             this.BTN_guardarResultado.TabIndex = 11;
             this.BTN_guardarResultado.Text = "Guardar resultado";
             this.BTN_guardarResultado.UseVisualStyleBackColor = true;
@@ -216,17 +227,19 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(197, 23);
+            this.label6.Location = new System.Drawing.Point(263, 28);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(74, 20);
+            this.label6.Size = new System.Drawing.Size(91, 25);
             this.label6.TabIndex = 12;
             this.label6.Text = "Calificar";
             // 
             // Preguntas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(501, 450);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(668, 554);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.BTN_guardarResultado);
             this.Controls.Add(this.score5);
@@ -239,6 +252,7 @@
             this.Controls.Add(this.answer2);
             this.Controls.Add(this.answer1);
             this.Controls.Add(this.score1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Preguntas";
             this.Text = "Preguntas";
             ((System.ComponentModel.ISupportInitialize)(this.score1)).EndInit();
