@@ -17,6 +17,7 @@ namespace proyectoFinalPrograII
         public modificar(vacantes f2, int fila)
         {
             InitializeComponent();
+            
             F2 = f2;
             Fila = fila;
             txtnombreM.Text = Datos.lisvacante[fila].NombreV.ToString();
@@ -27,6 +28,22 @@ namespace proyectoFinalPrograII
             txtFCDeFinM.Text = Datos.lisvacante[fila].FCDEFinV.ToString();
             txtCantidadVM.Text = Datos.lisvacante[fila].CantidadV.ToString();
 
+            //VALIDACIONES PAPA =)
+            txtsalarioM.KeyPress += new KeyPressEventHandler(Validar);
+            txtCantidadVM.KeyPress += new KeyPressEventHandler(Validar);
+        }
+        private void Validar(Object sender, KeyPressEventArgs E)
+        {
+            TextBox Caja = (TextBox)sender;
+            if (char.IsLetter(E.KeyChar))
+            {
+                errorProvider1.SetError(Caja, "Solo se permite numero");
+                E.Handled = true;
+            }
+            else
+            {
+                errorProvider1.SetError(Caja, "");
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

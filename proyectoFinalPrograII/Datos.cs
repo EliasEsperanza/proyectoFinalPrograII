@@ -12,5 +12,7 @@ namespace proyectoFinalPrograII
         public static List<agreagraVS> lisvacante = new List<agreagraVS> { new agreagraVS("angel", "mucho habla", "comer mucho", 200, " 5 de mayo", "5 nomviembre", 32, 0) };
         public static double resultado;
         public static List<ObjAspirante> listResultado = new List<ObjAspirante>(); 
+
+
     }
 }

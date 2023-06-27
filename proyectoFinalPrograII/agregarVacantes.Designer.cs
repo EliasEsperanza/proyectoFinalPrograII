@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,125 +45,142 @@
             this.txtCantidadV = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(27, 32);
+            this.label1.Location = new System.Drawing.Point(20, 26);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(126, 16);
+            this.label1.Size = new System.Drawing.Size(101, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre de vacante";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(46, 119);
+            this.label2.Location = new System.Drawing.Point(34, 97);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 16);
+            this.label2.Size = new System.Drawing.Size(63, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Descripcion";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(46, 205);
+            this.label3.Location = new System.Drawing.Point(34, 167);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 16);
+            this.label3.Size = new System.Drawing.Size(56, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Requisitos";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(46, 297);
+            this.label4.Location = new System.Drawing.Point(34, 241);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 16);
+            this.label4.Size = new System.Drawing.Size(39, 13);
             this.label4.TabIndex = 3;
             this.label4.Text = "Salario";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(304, 32);
+            this.label5.Location = new System.Drawing.Point(228, 26);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(178, 16);
+            this.label5.Size = new System.Drawing.Size(142, 13);
             this.label5.TabIndex = 4;
             this.label5.Text = "Fecha de inicio de seleccion";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(304, 119);
+            this.label6.Location = new System.Drawing.Point(228, 97);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(213, 16);
+            this.label6.Size = new System.Drawing.Size(170, 13);
             this.label6.TabIndex = 5;
             this.label6.Text = "Fecha de finalizacion de seleccion";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(317, 205);
+            this.label7.Location = new System.Drawing.Point(238, 167);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(138, 16);
+            this.label7.Size = new System.Drawing.Size(111, 13);
             this.label7.TabIndex = 6;
             this.label7.Text = "Cantidad de vacantes";
             // 
             // txtnombrev
             // 
-            this.txtnombrev.Location = new System.Drawing.Point(30, 60);
+            this.txtnombrev.Location = new System.Drawing.Point(22, 49);
+            this.txtnombrev.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtnombrev.Name = "txtnombrev";
-            this.txtnombrev.Size = new System.Drawing.Size(149, 22);
+            this.txtnombrev.Size = new System.Drawing.Size(113, 20);
             this.txtnombrev.TabIndex = 8;
             // 
             // txtdescripV
             // 
-            this.txtdescripV.Location = new System.Drawing.Point(30, 147);
+            this.txtdescripV.Location = new System.Drawing.Point(22, 119);
+            this.txtdescripV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtdescripV.Name = "txtdescripV";
-            this.txtdescripV.Size = new System.Drawing.Size(149, 22);
+            this.txtdescripV.Size = new System.Drawing.Size(113, 20);
             this.txtdescripV.TabIndex = 9;
             // 
             // txtrequisitoV
             // 
-            this.txtrequisitoV.Location = new System.Drawing.Point(30, 240);
+            this.txtrequisitoV.Location = new System.Drawing.Point(22, 195);
+            this.txtrequisitoV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtrequisitoV.Name = "txtrequisitoV";
-            this.txtrequisitoV.Size = new System.Drawing.Size(149, 22);
+            this.txtrequisitoV.Size = new System.Drawing.Size(113, 20);
             this.txtrequisitoV.TabIndex = 10;
             // 
             // txtSalarioV
             // 
-            this.txtSalarioV.Location = new System.Drawing.Point(30, 336);
+            this.txtSalarioV.Location = new System.Drawing.Point(22, 273);
+            this.txtSalarioV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtSalarioV.Name = "txtSalarioV";
-            this.txtSalarioV.Size = new System.Drawing.Size(149, 22);
+            this.txtSalarioV.Size = new System.Drawing.Size(113, 20);
             this.txtSalarioV.TabIndex = 11;
             // 
             // txtFCDeinV
             // 
-            this.txtFCDeinV.Location = new System.Drawing.Point(310, 60);
+            this.txtFCDeinV.Location = new System.Drawing.Point(232, 49);
+            this.txtFCDeinV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtFCDeinV.Name = "txtFCDeinV";
-            this.txtFCDeinV.Size = new System.Drawing.Size(160, 22);
+            this.txtFCDeinV.Size = new System.Drawing.Size(121, 20);
             this.txtFCDeinV.TabIndex = 12;
             // 
             // txtFCDeFinV
             // 
-            this.txtFCDeFinV.Location = new System.Drawing.Point(310, 147);
+            this.txtFCDeFinV.Location = new System.Drawing.Point(232, 119);
+            this.txtFCDeFinV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtFCDeFinV.Name = "txtFCDeFinV";
-            this.txtFCDeFinV.Size = new System.Drawing.Size(160, 22);
+            this.txtFCDeFinV.Size = new System.Drawing.Size(121, 20);
             this.txtFCDeFinV.TabIndex = 13;
             // 
             // txtCantidadV
             // 
-            this.txtCantidadV.Location = new System.Drawing.Point(307, 240);
+            this.txtCantidadV.Location = new System.Drawing.Point(230, 195);
+            this.txtCantidadV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCantidadV.Name = "txtCantidadV";
-            this.txtCantidadV.Size = new System.Drawing.Size(160, 22);
+            this.txtCantidadV.Size = new System.Drawing.Size(121, 20);
             this.txtCantidadV.TabIndex = 14;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(430, 337);
+            this.button1.Location = new System.Drawing.Point(322, 274);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(106, 57);
+            this.button1.Size = new System.Drawing.Size(80, 46);
             this.button1.TabIndex = 16;
             this.button1.Text = "agregar";
             this.button1.UseVisualStyleBackColor = true;
@@ -170,19 +188,24 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(574, 336);
+            this.button2.Location = new System.Drawing.Point(430, 273);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(106, 58);
+            this.button2.Size = new System.Drawing.Size(80, 47);
             this.button2.TabIndex = 17;
             this.button2.Text = "regresar";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // agregarVacantes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtCantidadV);
@@ -199,9 +222,11 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "agregarVacantes";
             this.Text = "agregarVacantes";
             this.Load += new System.EventHandler(this.agregarVacantes_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -225,5 +250,6 @@
         private System.Windows.Forms.TextBox txtCantidadV;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

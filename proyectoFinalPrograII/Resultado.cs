@@ -18,7 +18,7 @@ namespace proyectoFinalPrograII
             J = j;
             InitializeComponent();
             llenarData();
-            t1.Start();
+            
         }
 
         public void llenarData()
@@ -29,10 +29,11 @@ namespace proyectoFinalPrograII
                 dataGridView1.Rows.Add(item.DatosPersonales, item.result);
             }
             Datos.resultado = 0;
+            t1.Start();
 
             //int Fila = dataGridView1.CurrentRow.Index;
             //int Celda = dataGridView1.CurrentCell.ColumnIndex;
-            
+
         }
 
         private void BTN_regresar_Click(object sender, EventArgs e)
@@ -87,5 +88,7 @@ namespace proyectoFinalPrograII
             }
             
         }
+
+        
     }
 }

@@ -20,6 +20,7 @@ namespace proyectoFinalPrograII
             InitializeComponent();
             FA = fa;
             actualizar();
+
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -32,21 +33,28 @@ namespace proyectoFinalPrograII
         private void button2_Click(object sender, EventArgs e)
         {
             //Agregar tryCacth
-            int fila = DTvacantes.CurrentRow.Index;
-            int celda = DTvacantes.CurrentCell.ColumnIndex;
-            int J = 0;
-            
-            for(int i = 0; i< Datos.lisvacante.Count; i++)
+            if (Datos.lisvacante.Count > 0)
             {
-                if (Datos.lisvacante[i].T == Convert.ToInt16(DTvacantes.Rows[fila].Cells[0].Value))
+                int fila = DTvacantes.CurrentRow.Index;
+                int celda = DTvacantes.CurrentCell.ColumnIndex;
+                int J = 0;
+            
+                for(int i = 0; i< Datos.lisvacante.Count; i++)
                 {
-                    J= i;
-                }
+                    if (Datos.lisvacante[i].T == Convert.ToInt16(DTvacantes.Rows[fila].Cells[0].Value))
+                    {
+                        J= i;
+                    }
                 
+                }
+                modificar F1= new modificar(this,J);
+                F1.Show();
+                this.Hide();
             }
-            modificar F1= new modificar(this,J);
-            F1.Show();
-            this.Hide();
+            else
+            {
+                MessageBox.Show("No se puede modificar una fila inexistente");
+            }
         }
 
         public void actualizar()
@@ -112,7 +120,8 @@ namespace proyectoFinalPrograII
 
         private void checkordenar_CheckedChanged(object sender, EventArgs e)
         {
-            List<agreagraVS> mayoromenor = (from xd in Datos.lisvacante orderby xd.T select xd).ToList();
+            IEnumerable<agreagraVS> MayorMenor = from Basado in Datos.lisvacante orderby Basado.T descending select Basado;
+            List<agreagraVS> mayoromenor = MayorMenor.ToList();
             
             if (checkordenar.Checked)
             {   

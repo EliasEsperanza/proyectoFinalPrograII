@@ -17,6 +17,23 @@ namespace proyectoFinalPrograII
         {
             InitializeComponent();
             F2 = f2;
+
+            //VALIDACIONES PAPA =)
+            txtSalarioV.KeyPress += new KeyPressEventHandler(Validar);
+            txtCantidadV.KeyPress += new KeyPressEventHandler(Validar);
+        }
+        private void Validar(Object sender, KeyPressEventArgs E)
+        {
+            TextBox Caja = (TextBox)sender;
+            if (char.IsLetter(E.KeyChar))
+            {
+                errorProvider1.SetError(Caja, "Solo se permite numero");
+                E.Handled = true;
+            }
+            else
+            {
+                errorProvider1.SetError(Caja, "");
+            }
         }
 
         private void agregarVacantes_Load(object sender, EventArgs e)

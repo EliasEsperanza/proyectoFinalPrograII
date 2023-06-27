@@ -17,6 +17,22 @@ namespace proyectoFinalPrograII
         {
             InitializeComponent();
             I = i;
+
+            //VALIDACIONES PAPA =)
+            tbRangoPisto.KeyPress += new KeyPressEventHandler(Validar);
+        }
+        private void Validar(Object sender, KeyPressEventArgs E)
+        {
+            TextBox Caja = (TextBox)sender;
+            if (char.IsLetter(E.KeyChar))
+            {
+                errorProvider1.SetError(Caja, "Solo se permite numero");
+                E.Handled = true;
+            }
+            else
+            {
+                errorProvider1.SetError(Caja, "");
+            }
         }
         private void ButtonRegresar_Click_1(object sender, EventArgs e)
         {

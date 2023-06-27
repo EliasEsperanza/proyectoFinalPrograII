@@ -39,9 +39,18 @@ namespace proyectoFinalPrograII
             }
             else
             {
-                Evaluacion win2 = new Evaluacion(P);
-                win2.Show();
-                this.Hide();
+                try//Por un posible error que viene XD
+                {
+                    Evaluacion win2 = new Evaluacion(P);
+                    win2.Show();
+                    this.Hide();
+                }
+                catch (Exception JK)
+                {
+                    MessageBox.Show($"Elias mira y dime que pasa: {JK.Message}");
+                    
+                }
+               
             }
         }
 

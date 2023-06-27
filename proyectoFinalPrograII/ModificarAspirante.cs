@@ -22,8 +22,23 @@ namespace proyectoFinalPrograII
             tbDatGenerales.Text = Datos.ListAspirante[Fila].DatosPersonales.ToString();
             tbDatAcademico.Text = Datos.ListAspirante[Fila].NivelAcademico.ToString();
             tbRangoPisto.Text = Datos.ListAspirante[Fila].RangoSalario.ToString();
-        }
 
+            //VALIDACIONES PAPA =)
+            tbRangoPisto.KeyPress += new KeyPressEventHandler(Validar);
+        }
+        private void Validar(Object sender, KeyPressEventArgs E)
+        {
+            TextBox Caja = (TextBox)sender;
+            if (char.IsLetter(E.KeyChar))
+            {
+                errorProvider1.SetError(Caja, "Solo se permite numero");
+                E.Handled = true;
+            }
+            else
+            {
+                errorProvider1.SetError(Caja, "");
+            }
+        }
         private void ButtonModificar_Click(object sender, EventArgs e)
         {
             Datos.ListAspirante[Fila].DatosPersonales = tbDatGenerales.Text;
