@@ -25,6 +25,7 @@ namespace proyectoFinalPrograII
                 {
                     Preguntas P = new Preguntas();
                     menuEntrevistador menu1 = new menuEntrevistador(P);
+                    menu1.ObtenerLogin(this);
                     menu1.Show();
                     this.Hide();
                 }

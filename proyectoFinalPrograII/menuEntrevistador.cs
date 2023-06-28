@@ -13,10 +13,15 @@ namespace proyectoFinalPrograII
     public partial class menuEntrevistador : Form
     {
         public Preguntas P;
+        public LOGIN login;
         public menuEntrevistador(Preguntas p)
         {
             InitializeComponent();
             P = p;
+        }
+        public void ObtenerLogin(LOGIN lOGIN)
+        {
+            login = lOGIN;
         }
         //public menuEntrevistador()
         //{
@@ -59,6 +64,13 @@ namespace proyectoFinalPrograII
             Resultado win3 = new Resultado(this);
             win3.Show();
             this.Hide();
+        }
+
+        private void buttonRegresar_Click(object sender, EventArgs e)
+        {
+            login = new LOGIN();
+            login.Show();
+            this.Close();
         }
     }
 }
